@@ -9,9 +9,10 @@ defmodule ElixirConfLiveView.Application do
     # List all child processes to be supervised
     children = [
       # Start the endpoint when the application starts
-      ElixirConfLiveViewWeb.Endpoint
+      ElixirConfLiveViewWeb.Endpoint,
       # Starts a worker by calling: ElixirConfLiveView.Worker.start_link(arg)
-      # {ElixirConfLiveView.Worker, arg},
+      {ElixirConfLiveView.Api.Github, []},
+      {ElixirConfLiveView.Api.Twitter, []}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

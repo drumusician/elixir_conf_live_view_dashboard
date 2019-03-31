@@ -41,6 +41,9 @@ defmodule ElixirConfLiveView.MixProject do
       {:plug_cowboy, "~> 2.0"},
       {:phoenix_live_view, github: "phoenixframework/phoenix_live_view"},
       {:calendar, "~> 0.17.4"},
+      {:timex, "~> 3.1"},
+			{:extwitter, "~> 0.8"},
+      {:tentacat, "~> 1.0"},
     ]
   end
 end
