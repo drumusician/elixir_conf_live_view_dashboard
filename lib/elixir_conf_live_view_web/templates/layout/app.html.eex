@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="<%=Routes.static_path(@conn, "/css/app.css") %>"/>
   </head>
   <body>
+    <header>
+      <h1 class="title">ElixirConfEU - LiveView Dashboard</h1>
+    </header>
     <main role="main" class="container">
       <%=render @view_module, @view_template, assigns %>
     </main>

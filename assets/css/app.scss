@@ -1,6 +1,16 @@
 /* This file is for your main application css. */
 
 @import "material-dashboard/assets/scss/material-dashboard.scss";
+body {
+	background: grey url('/images/prague.jpg') no-repeat fixed center;
+	background-blend-mode: lighten;
+}
+
+.title {
+	display: flex;
+	justify-content: center;
+	margin-top: 1rem;
+}
 
 .live_view_stats {
   display: flex;
