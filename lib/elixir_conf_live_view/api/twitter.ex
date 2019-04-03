@@ -11,7 +11,7 @@ defmodule ElixirConfLiveView.Api.Twitter do
   
 	def start_stream do
 		spawn(fn ->
-      stream = ExTwitter.stream_filter([track: "@ElixirConfEU"], :infinity)
+      stream = ExTwitter.stream_filter([track: "@ElixirConfEU,ElixirConfEU,LiveView,Elixir Conf Prague,Elixir Prague"], :infinity)
       for tweet <- stream do
 				ElixirConfLiveViewWeb.Endpoint.broadcast("tweets", "new_tweet", %{tweet: tweet.text, url: tweet_url(tweet)}) 
       end
